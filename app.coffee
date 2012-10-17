@@ -32,4 +32,4 @@ app.mount 'home'
 
 http.createServer(app).listen process.env.PORT or 3000
 
-console.log "kassondrakirkman.com running - #{new Date()}"
+console.log "server running - #{new Date()}"
