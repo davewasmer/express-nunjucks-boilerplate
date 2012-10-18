@@ -13,6 +13,12 @@ app.configure 'development', ->
   app.use less
     src: path.join(__dirname, 'public')
     force: true
+  app.use coffeescript
+    src: 'coffeescripts'
+    dest: 'javascripts'
+    baseDir: 'public'
+    bare: false
+    force: true
 
 app.configure ->
   env = new nunjucks.Environment(new nunjucks.FileSystemLoader('views'))
