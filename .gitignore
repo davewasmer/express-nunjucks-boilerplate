@@ -1,3 +1,6 @@
+# Built files
+public/stylesheets/styles.css
+
 # Node
 lib-cov
 *.seed
